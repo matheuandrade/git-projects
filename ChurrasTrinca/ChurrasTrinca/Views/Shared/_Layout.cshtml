@@ -1,0 +1,49 @@
+﻿
+<!doctype html>
+<html lang="en">
+ <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width" />
+                @System.Web.Optimization.Styles.Render("~/Content/css")
+                @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+                @System.Web.Optimization.Scripts.Render("~/Content/bootstrap.min.css")
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="">
+                <meta name="author" content="">
+                <link rel="icon" href="~/favicon.ico">
+
+                <title>@ViewBag.Title - Churras da Trinca</title>
+
+                <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    </head>
+
+  <body>
+<header>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/Churras/Churras">Os churras da Trinca</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      </div>
+    </nav>
+
+   </header>     
+
+
+            @RenderBody()
+
+
+            <hr />
+            @Html.Partial("_footer")
+
+
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+        </body>
+</html>

@@ -1,0 +1,22 @@
+﻿@*Paginação*@
+<div class="pagination-bottom">
+    <div class="prev">
+    @if (Model.CurrentPageIndex > 1)
+    {
+        <text><span></span></text>
+        @Html.ActionLink("Anterior", "ListCardsOfOperator", new { page = Model.CurrentPageIndex - 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+    }
+    </div>
+
+    <div class="crumb">               
+        @(Model.TotalPageCount < Model.CurrentPageIndex ? 0 : Model.CurrentPageIndex) de @Model.TotalPageCount
+    </div>
+
+    <div class="next">
+    @if (Model.CurrentPageIndex < Model.TotalPageCount)
+    {
+        @Html.ActionLink("Próximo", "ListCardsOfOperator", new { page = Model.CurrentPageIndex + 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+        <text><span></span></text>
+    }
+    </div>
+</div>  

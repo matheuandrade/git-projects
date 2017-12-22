@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ChurrasTrinca.Models.Churras>
+
+@{
+    ViewBag.Title = "Churras";
+}
+
+<h1>Churras</h1>
+
+ <div class="container-fluid">
+      <div class="row">
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+
+        <table class="table">
+                        <table class="table">
+                          <thead class="thead-light">
+                            <tr>
+                              <th scope="col">Data</th>
+                              <th scope="col">Descrição</th>
+                              <th scope="col">Participantes</th>
+                               <th scope="col">Total Arrecadado</th>
+                                <th scope="col">Ação</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              @foreach (var item in Model) {
+                                    <tr>
+                                      <td>@Html.DisplayFor(modelItem => item.Data)</td>
+                                      <td>@Html.DisplayFor(modelItem => item.Descricao)</td>
+                                      <td>@Html.DisplayFor(modelItem => item.Participantes.Count)</td>
+                                      <td>@Html.DisplayFor(modelItem => item.ValorArrecadado)</td>
+                                      <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                                        @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                                        @Html.ActionLink("Delete", "DeletaChurras", new { id=item.ID }, new { onclick = "return confirm('Tem certeza?');" })
+                                      </td>
+                                    </tr>
+                              }
+                          </tbody>
+        </table>
+     <p>
+        @Html.ActionLink("+ Adicionar Churras", "Create")
+     </p>
+
+        </main>
+      </div>
+    </div>

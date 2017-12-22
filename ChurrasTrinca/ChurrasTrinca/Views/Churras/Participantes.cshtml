@@ -1,0 +1,55 @@
+﻿@model ChurrasTrinca.Models.Churras
+@{
+    ViewBag.Title = "Participantes";
+}
+
+<h2>Participantes</h2>
+
+
+
+ <div class="container-fluid">
+      <div class="row">
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+
+            <h1>@Model.porque</h1>
+
+            <h3>Dia @Model.Data.ToShortDateString()</h3>
+
+            <h5>Participantes</h5>
+        <table class="table">
+                        <table class="table">
+                          <thead class="thead-light">
+                            <tr>
+                              <th scope="col">Nome</th>
+                              <th scope="col">Contribuição</th>
+                              <th scope="col">Bebida</th>
+                               <th scope="col">Pago</th>
+                                <th scope="col">Observação</th>
+                                <th scope="col">Ação</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              @foreach (var item in Model.Participantes.ToList()) {
+                                    <tr>
+                                      <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                                      <td>@Html.DisplayFor(modelItem => item.contribuicao)</td>
+                                      <td> @if (item.Bebida) { <p>Sim</p> }
+                                           else
+                                           { <p>Não</p> } </td>
+                                      <td>@Html.DisplayFor(modelItem => item.Bebida)</td>
+                                      <td>@Html.DisplayFor(modelItem => item.Observacao)</td>
+                                      <td>
+                                        @Html.ActionLink("Deletar", "DeletaParticipante",  new { idParticipante= item.ID, idChurras = Model.ID }, new { onclick = "return confirm('Tem certeza?');" })
+                                      </td>
+                                    </tr>
+                              }
+                          </tbody>
+        </table>
+     <p>
+        @Html.ActionLink("Voltar", "Details" , new { id=Model.ID })
+     </p>
+
+        </main>
+      </div>
+    </div>

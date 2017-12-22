@@ -1,0 +1,47 @@
+﻿
+    <ul class="submenu">
+
+        @if (ViewBag.UserProfile == "provider")
+        {        
+             if (Model == "1")  
+            { 
+                <li class="ativo"><a href="/Dashboard/ServiceProviderDashboard">@Resources.SiteWeb.Lgd_Dashboard.ToString()</a></li>  
+            }
+            else
+            { 
+                <li><a href="/Dashboard/ServiceProviderDashboard">@Resources.SiteWeb.Lgd_Dashboard.ToString()</a></li>
+            }
+        }
+
+        @if (Model == "2")  
+        { 
+            <li class="ativo"><a href="/ServiceProvider/AttendanceList">@Resources.SiteWeb.Title_AttendanceList.ToString()</a></li>  
+        }
+        else
+        { 
+            <li><a href="/ServiceProvider/AttendanceList">@Resources.SiteWeb.Title_AttendanceList.ToString()</a></li>
+        }
+
+        @if (ViewBag.UserProfile == "operator")
+        {
+            if (Model == "3")
+            { 
+                @*<li class="ativo"><a href="/ManageServiceProvider">@Resources.SiteWeb.Lgd_Register.ToString()</a></li>*@
+                <li class="ativo"><a href="/ServiceProvider/ListServiceProviderOfOperator">@Resources.SiteWeb.Title_ListServiceProviders.ToString()</a></li>
+            }
+            else
+            { 
+                <li><a href="/ServiceProvider/ListServiceProviderOfOperator">@Resources.SiteWeb.Title_ListServiceProviders.ToString()</a></li>
+            }
+        }
+        
+        @if (Model == "4")
+        { 
+            <li class="ativo"><a href="/ManageServiceProvider">@Resources.SiteWeb.Lgd_Register.ToString()</a></li>
+        }
+        else
+        { 
+            <li><a href="/ManageServiceProvider">@Resources.SiteWeb.Lgd_Register.ToString()</a></li>
+        }
+
+    </ul>

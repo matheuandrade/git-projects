@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ProjectManagementModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ProjectManagementModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Projects" EntityType="ProjectManagementModel.Project" />
+    <EntitySet Name="Tasks" EntityType="ProjectManagementModel.Task" />
+    <EntitySet Name="Users" EntityType="ProjectManagementModel.User" />
+    <AssociationSet Name="ProjectTask" Association="ProjectManagementModel.ProjectTask">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="Task" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="TaskUser" Association="ProjectManagementModel.TaskUser">
+      <End Role="Task" EntitySet="Tasks" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Task" Relationship="ProjectManagementModel.ProjectTask" FromRole="Project" ToRole="Task" />
+    <Property Type="String" Name="status" Nullable="true" />
+    <Property Type="String" Name="name" Nullable="true" annotation:StoreGeneratedPattern="None" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Project" Relationship="ProjectManagementModel.ProjectTask" FromRole="Task" ToRole="Project" />
+    <Property Type="Int32" Name="ProjectId" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="ProjectManagementModel.TaskUser" FromRole="Task" ToRole="User" />
+    <Property Type="String" Name="description" Nullable="false" />
+    <Property Type="String" Name="status" Nullable="true" />
+    <Property Type="DateTime" Name="expirationData" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Task" Relationship="ProjectManagementModel.TaskUser" FromRole="User" ToRole="Task" />
+    <Property Type="String" Name="name" Nullable="false" />
+  </EntityType>
+  <Association Name="ProjectTask">
+    <End Type="ProjectManagementModel.Project" Role="Project" Multiplicity="1" />
+    <End Type="ProjectManagementModel.Task" Role="Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TaskUser">
+    <End Type="ProjectManagementModel.Task" Role="Task" Multiplicity="1" />
+    <End Type="ProjectManagementModel.User" Role="User" Multiplicity="1" />
+  </Association>
+</Schema>

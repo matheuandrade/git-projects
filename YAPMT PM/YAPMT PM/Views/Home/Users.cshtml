@@ -1,0 +1,47 @@
+﻿@model IEnumerable<YAPMT_PM.Models.User>
+
+
+@{
+    ViewBag.Title = "Users";
+}
+
+ <div class="container-fluid">
+      <div class="row">
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+            <h1>Users</h1>
+            <table>
+                    <tr>
+                        <th>
+                            Full Name
+                        </th>
+                        <th>
+                            Organization
+                        </th>
+                       <th>
+                            Username
+                        </th>
+                    </tr>
+
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Organization)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                    </tr>
+                }
+
+                </table>        
+
+
+        </main>
+      </div>
+    </div>
+
+

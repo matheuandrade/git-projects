@@ -1,0 +1,21 @@
+﻿@*Menu do perfil admin*@
+@if (ViewBag.UserProfile == "admin")
+{
+    <li><a href="#">Dashboard</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastros <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="Grupos">Cadastro de grupos</a></li>
+            <li><a href="Guias">Cadastro de guias</a></li>
+            <li><a href="Atividades">Cadastro de atividades</a></li>
+            <li class="divider"></li>
+            <li><a href="Clientes">Cadastro de clientes</a></li>
+            <li class="divider"></li>
+            @*<li><a href="#">One more separated link</a></li>*@
+        </ul>
+    </li>
+    <li>@Html.ActionLink("Notificações", "Index", "Notifications")</li>
+    <li><a href="#">Relatórios</a></li> 
+} 
+                    
+                

@@ -1,0 +1,49 @@
+﻿
+    <ul class="submenu">
+
+        @if (Model == "1")  
+        { 
+            <li class="ativo"><a href="/Dashboard/OperatorDashboard">@Resources.SiteWeb.Lgd_Dashboard.ToString()</a></li>  
+        }
+        else
+        { 
+            <li><a href="/Dashboard/OperatorDashboard">@Resources.SiteWeb.Lgd_Dashboard.ToString()</a></li>
+        }
+        
+        @if (Model == "2")  
+        { 
+            <li class="ativo"><a href="/Cards/CreateNewCard">@Resources.SiteWeb.Lgd_AssociateCard.ToString()</a></li> 
+        }
+        else
+        { 
+            <li><a href="/Cards/CreateNewCard">@Resources.SiteWeb.Lgd_AssociateCard.ToString()</a></li>
+        }
+
+        @if (Model == "3")  
+        { 
+            <li class="ativo"><a href="/Cards/ListCardsOfOperatorAssociates">@Resources.SiteWeb.Lgd_ListCardsAssociates.ToString()</a></li>
+        }
+        else
+        { 
+            <li><a href="/Cards/ListCardsOfOperatorAssociates">@Resources.SiteWeb.Lgd_ListCardsAssociates.ToString()</a></li>
+        }
+
+        @if (Model == "4")  
+        { 
+            <li class="ativo"><a href="/Cards/ListCardsOfOperator">@Resources.SiteWeb.Lgd_ListCards.ToString()</a></li>
+        }
+        else
+        { 
+            <li><a href="/Cards/ListCardsOfOperator">@Resources.SiteWeb.Lgd_ListCards.ToString()</a></li>
+        }
+
+        @if (Model == "5")  
+        { 
+            <li class="ativo"><a href="/ManageOperator">@Resources.SiteWeb.Lgd_Register.ToString()</a></li>
+        }
+        else
+        { 
+            <li><a href="/ManageOperator">@Resources.SiteWeb.Lgd_Register.ToString()</a></li>
+        }
+
+    </ul>

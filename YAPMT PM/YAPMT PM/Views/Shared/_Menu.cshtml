@@ -1,0 +1,73 @@
+﻿<ul>
+   
+@*    @if (!string.IsNullOrEmpty(@User.Identity.Name) && @User.Identity.Name != "provider" && @User.Identity.Name != "operator" && @User.Identity.Name != "admin")
+    {
+    <li class="client">
+        <a href="/Client" class="@(ViewData["profile"] == "client" ? "ativo" : "")">Informações <br />do cartão</a>
+    </li>
+    }*@
+
+    @if (ViewBag.UserProfile == "client")
+    {
+    <li class="client">
+        <a href="/Client" class="@(ViewData["profile"] == "client" ? "ativo" : "")">Informações <br />do cartão</a>
+    </li>
+    }
+    
+@*    @if (@User.Identity.Name == "provider" || @User.Identity.Name == "operator" || @User.Identity.Name == "admin")
+    {   
+    <li class="serviceProvider">
+        <a href="/ServiceProvider/AttendanceList" class="@(ViewData["profile"] == "provider" ? "ativo" : "")">Prestador <br />de serviços</a>
+    </li>
+    }*@
+
+    @if (ViewBag.UserProfile == "provider" || ViewBag.UserProfile == "operator" || ViewBag.UserProfile == "admin")
+    {   
+    <li class="serviceProvider">
+        <a href="/ServiceProvider/AttendanceList" class="@(ViewData["profile"] == "provider" ? "ativo" : "")">Prestador <br />de serviços</a>
+    </li>
+    }                
+    
+@*    @if (@User.Identity.Name == "operator" || @User.Identity.Name == "admin")
+    {
+    <li class="operator">
+        <a href="/Cards/CreateNewCard" class="@(ViewData["profile"] == "operator" ? "ativo" : "")">Operadora</a>
+    </li>
+    }*@
+    
+    @if (ViewBag.UserProfile == "operator" || ViewBag.UserProfile == "admin")
+    {
+    <li class="operator">
+        <a href="/Cards/CreateNewCard" class="@(ViewData["profile"] == "operator" ? "ativo" : "")">Operadora</a>
+    </li>
+    }        
+    
+@*    @if (@User.Identity.Name == "admin")
+    {
+    <li class="admin">
+        <a href="#" class="@(ViewData["profile"] == "admin" ? "ativo" : "")">Administrador</a>
+    </li>
+    }*@
+        
+    @if (ViewBag.UserProfile == "admin")
+    {
+    <li class="admin">
+        <a href="#" class="@(ViewData["profile"] == "admin" ? "ativo" : "")">Administrador</a>
+    </li>
+    }        
+    
+    @*@if (@User.Identity.Name == "provider" || @User.Identity.Name == "operator" || @User.Identity.Name == "admin")
+    {   
+    <li class="reports">
+        <a href="/Reports" class="@(ViewData["profile"] == "reports" ? "ativo" : "")">Relatórios</a>
+    </li>
+    }*@
+        
+    @if (ViewBag.UserProfile == "provider" || ViewBag.UserProfile == "operator" || ViewBag.UserProfile == "admin")
+    {   
+    <li class="reports">
+        <a href="/Reports" class="@(ViewData["profile"] == "reports" ? "ativo" : "")">Relatórios</a>
+    </li>
+    }
+    
+</ul>

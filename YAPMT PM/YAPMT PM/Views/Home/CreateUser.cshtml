@@ -1,0 +1,74 @@
+﻿@model YAPMT_PM.Models.User
+
+@{
+    ViewBag.Title = "CreateUser";
+}
+
+
+@{Html.RenderAction("ProjectsPartial", "Home");}
+
+
+ <div class="container-fluid">
+      <div class="row">
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+         @*   <h1>Dashboard</h1>*@
+                      @using (Html.BeginForm()) {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                          <fieldset>
+                            <form>
+                               <div class="form-group row">
+                                      @Html.LabelFor(model => model.LastName, new { @class = "col-sm-2 col-form-label", @maxlength = 50})
+                                    <div class="col-sm-6">
+                                      @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @maxlength = 50})
+                                      @Html.ValidationMessageFor(model => model.LastName)
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                      @Html.LabelFor(model => model.FirstMidName, new { @class = "col-sm-2 col-form-label", @maxlength = 50})
+                                    <div class="col-sm-6">
+                                      @Html.TextBoxFor(model => model.FirstMidName, new { @class = "form-control", @maxlength = 50})
+                                      @Html.ValidationMessageFor(model => model.FirstMidName)
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                      @Html.LabelFor(model => model.Organization, new { @class = "col-sm-2 col-form-label", @maxlength = 30})
+                                    <div class="col-sm-6">
+                                      @Html.TextBoxFor(model => model.Organization, new { @class = "form-control", @maxlength = 30})
+                                      @Html.ValidationMessageFor(model => model.Organization)
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                      @Html.LabelFor(model => model.UserName, new { @class = "col-sm-2 col-form-label", @maxlength = 10})
+                                    <div class="col-sm-6">
+                                      @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @maxlength = 10})
+                                      @Html.ValidationMessageFor(model => model.UserName)
+                                    </div>
+                                </div>
+
+                           </form>
+                            <p>
+                                <input class="btn btn-primary" type="submit" value="Create">
+                            </p>
+                         </fieldset>
+                      }
+                            <div>
+                                @Html.ActionLink("Back to List", "Projects")
+                            </div>
+                            <div>
+                                @Html.ActionLink("Users", "Users")
+                            </div>
+
+        </main>
+      </div>
+    </div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

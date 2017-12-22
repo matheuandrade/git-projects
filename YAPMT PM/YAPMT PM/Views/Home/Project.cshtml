@@ -1,0 +1,130 @@
+﻿@model YAPMT_PM.Models.Project
+
+@{
+    ViewBag.Title = "Project";
+    
+    int concludedTasks = Model.Tasks.Where(x => x.Status.Equals(YAPMT_PM.Models.StatusOfTask.Concluded)).Count();
+    int okTasks = Model.Tasks.Where(x => x.Status.Equals(YAPMT_PM.Models.StatusOfTask.Ok)).Count();
+    int lateTasks = Model.Tasks.Where(x => x.Status.Equals(YAPMT_PM.Models.StatusOfTask.Late)).Count();
+    
+}
+
+@{Html.RenderAction("ProjectsPartial", "Home");}
+
+ <div class="container-fluid">
+      <div class="row">
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+            
+            <h1 id="div1">@Model.Name</h1> <h2>@if ( (concludedTasks + okTasks) >= lateTasks) { @("Project in day") } else { @("Project late")  }</h2>  
+            @Html.ActionLink("Delete Project", "DeleteProject", new { id= Model.ID }, new { onclick = "return confirm('Are you sure wants to delete?');" })
+               
+            <hr />
+            <table>
+                @foreach (var item in Model.Tasks.ToList()) {
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                              <label class="form-check-label">
+
+                                   @if (item.Status.Equals(YAPMT_PM.Models.StatusOfTask.Concluded) || item.Status.Equals(YAPMT_PM.Models.StatusOfTask.LateConcluded))
+                                   {
+                                            <input class="form-check-input" type="checkbox"  checked name="tasks" value="@item.ID">
+                                   }else{
+                                       <input class="form-check-input" type="checkbox"   name="tasks" value="@item.ID">
+                                   }
+
+
+                                   @if (item.Status.Equals(YAPMT_PM.Models.StatusOfTask.Concluded))
+                                   {
+                                       <strike>
+                                            @(Html.DisplayFor(modelItem => item.Description) + " " 
+                                                    + "@" + Html.DisplayFor(modelItem => item.User.UserName) + " " 
+                                                    + Html.DisplayFor(modelItem => item.ExpirationDate.Month) + "/" 
+                                                    +  Html.DisplayFor(modelItem => item.ExpirationDate.Day))
+                                           </strike>
+                                  }
+                                  else if (item.Status.Equals(YAPMT_PM.Models.StatusOfTask.Late))
+                                  {
+                                      <font color="red" class="display-field">
+                                      @(Html.DisplayFor(modelItem => item.Description) + " "
+                                                    + "@" + Html.DisplayFor(modelItem => item.User.UserName) + " "
+                                                    + Html.DisplayFor(modelItem => item.ExpirationDate.Month) 
+                                                    + "/" + Html.DisplayFor(modelItem => item.ExpirationDate.Day))
+                                          </font>
+                                  } else if (item.Status.Equals(YAPMT_PM.Models.StatusOfTask.LateConcluded))
+                                  {
+                                      <strike>
+                                           <font color="red" class="display-field">
+                                                  @(Html.DisplayFor(modelItem => item.Description) + " "
+                                                                + "@" + Html.DisplayFor(modelItem => item.User.UserName) + " "
+                                                                + Html.DisplayFor(modelItem => item.ExpirationDate.Month) 
+                                                                + "/" + Html.DisplayFor(modelItem => item.ExpirationDate.Day))
+                                               
+                                              </font>
+                                          </strike>
+                                  }
+                                  else{
+                                      @(Html.DisplayFor(modelItem => item.Description) + " " 
+                                                    + "@" + Html.DisplayFor(modelItem => item.User.UserName) + " " 
+                                                    + Html.DisplayFor(modelItem => item.ExpirationDate.Month) 
+                                                    + "/" +  Html.DisplayFor(modelItem => item.ExpirationDate.Day))
+                                  }
+                              </label>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </table>
+                    <div>
+                            @Html.ActionLink("+ Add task", "CreateTask", new { id= Model.ID })
+                    </div>
+        </main>
+      </div>
+    </div>
+
+<style>
+#div1 {
+    margin-top: -70px;
+}
+
+</style>
+
+<script>
+
+    checkboxesTasks = document.getElementsByName('tasks');
+
+    for (var i = 0, len = checkboxesTasks.length; i < len; i++) {
+        checkboxesTasks[i].onclick = mudaStatusTask;
+    }
+
+    function mudaStatusTask() {
+        if (this.checked) {
+            var url = "/Home/mudaStatusTask";
+            $.get(url, {
+                idTask: this.value, status: true
+            }, function (data) {
+                location.reload(true);
+            });
+        } else {
+            var url = "/Home/mudaStatusTask";
+            $.get(url, {
+                idTask: this.value, status:false
+            }, function (data) {
+                location.reload(true);
+            });
+        }
+    }
+
+    var myVar = setInterval(myTimer, 10000);
+
+    function myTimer() {
+        var url = "/Home/mudaStatusTaskAtrasadas";
+            $.get(url, null, function (data) {
+                location.reload(true);
+            });
+    }
+
+
+
+</script>

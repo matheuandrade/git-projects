@@ -1,0 +1,6 @@
+C:\Users\mathe\OneDrive\Documentos\Visual Studio 2012\Projects\MatheusCruzAndrade\MatheusCruzAndrade\bin\Debug\MatheusCruzAndrade.exe.config
+C:\Users\mathe\OneDrive\Documentos\Visual Studio 2012\Projects\MatheusCruzAndrade\MatheusCruzAndrade\obj\Debug\MatheusCruzAndrade.csprojResolveAssemblyReference.cache
+C:\Users\mathe\OneDrive\Documentos\Visual Studio 2012\Projects\MatheusCruzAndrade\MatheusCruzAndrade\bin\Debug\MatheusCruzAndrade.exe
+C:\Users\mathe\OneDrive\Documentos\Visual Studio 2012\Projects\MatheusCruzAndrade\MatheusCruzAndrade\bin\Debug\MatheusCruzAndrade.pdb
+C:\Users\mathe\OneDrive\Documentos\Visual Studio 2012\Projects\MatheusCruzAndrade\MatheusCruzAndrade\obj\Debug\MatheusCruzAndrade.exe
+C:\Users\mathe\OneDrive\Documentos\Visual Studio 2012\Projects\MatheusCruzAndrade\MatheusCruzAndrade\obj\Debug\MatheusCruzAndrade.pdb

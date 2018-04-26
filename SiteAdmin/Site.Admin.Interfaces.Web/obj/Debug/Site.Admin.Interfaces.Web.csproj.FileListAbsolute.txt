@@ -43,11 +43,11 @@ C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.In
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.Helpers.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.Mvc.xml
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.Optimization.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.Razor.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.WebPages.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.WebPages.Deployment.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\System.Web.Optimization.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\Antlr3.Runtime.pdb
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\Newtonsoft.Json.xml
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\Site.Admin.Interfaces.Web\bin\EntityFramework.xml

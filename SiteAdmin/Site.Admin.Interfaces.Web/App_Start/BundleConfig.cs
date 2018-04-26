@@ -26,6 +26,16 @@ namespace Site.Admin.Interfaces.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            /* ***************************
+            * 
+            *  ADMIN-LTE 
+            *  
+            * ***************************/
+            bundles.Add(new StyleBundle("~/Content/admin-lte").Include(
+                "~/Content/Admin-LTE/dist/css/adminlte.min.css"));
+
+           
         }
     }
 }

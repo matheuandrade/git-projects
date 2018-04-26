@@ -1,0 +1,5 @@
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Facade\bin\Debug\SiteAdmin.Business.Facade.dll
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Facade\bin\Debug\SiteAdmin.Business.Facade.pdb
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Facade\obj\Debug\SiteAdmin.Business.Facade.csprojResolveAssemblyReference.cache
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Facade\obj\Debug\SiteAdmin.Business.Facade.dll
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Facade\obj\Debug\SiteAdmin.Business.Facade.pdb

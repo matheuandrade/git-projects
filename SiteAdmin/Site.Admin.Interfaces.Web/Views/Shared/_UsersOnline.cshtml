@@ -1,0 +1,31 @@
+﻿@using HorseManagement.Business.Dto
+@model List<User>
+@{
+    
+}
+
+@foreach(User user in Model)
+{
+    <span class="textarea-controls online">
+        <button type="button" class="btn btn-sm btn-primary pull-right" onclick='window.location="@Url.Action("Detail", "User", new { id = user.Id })"'>
+            @Resources.Resource.lbl_Visualize
+        </button>
+
+        <span class="pull-left">
+            @if (string.IsNullOrEmpty(user.Photo))
+            {
+                <img class="img-circle img-grid online" src="@Url.Content("~/images/user-unknown.png")" /> 
+            }
+            else
+            {
+                <img class="img-circle img-grid online" src="@user.Photo" /> 
+            }
+            <label>
+                <strong>@user.Login</strong>
+                <small>
+                    @user.Name
+                </small>
+            </label>
+        </span>
+    </span>
+}

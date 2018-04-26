@@ -1,0 +1,98 @@
+﻿@{
+    string msg = TempData["MensagemTela"] != null ? TempData["MensagemTela"].ToString() : string.Empty;
+    string language = this.TempData["LoginLanguage"].ToString();
+    this.TempData["LoginLanguage"] = language;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/smartadmin")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/mask")
+    @Scripts.Render("~/bundles/util")
+    @Scripts.Render("~/bundles/notification")
+</head>
+<body>
+    <header id="header">
+	    <div id="logo-group">
+		    <span id="logo">
+                @*<img src="@Url.Content("~/images/logoHorseManagement.png")"/>*@
+                <img src="@Url.Content("~/images/logo-technotag.gif")"/>
+            </span>
+	    </div>
+
+      @*  <div class="pull-right">
+            <ul class="header-dropdown-list hidden-xs">
+		        <li>
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        @if(language == "pt")
+                        {
+                            <img class="flag flag-br"> @Resources.Resource.lbl_Portuguese <i class="fa fa-angle-down"></i>
+                        }
+                        else
+                        {
+                            <img class="flag flag-us"> @Resources.Resource.lbl_English <i class="fa fa-angle-down"></i>
+                        }
+                    </a>
+			        <ul class="dropdown-menu pull-right">
+				        <li @(language == "pt" ? "class=active" : "")>
+					        <a href="@Url.Action("ChangeLanguageLogin", "Home")/?language=pt&urlAnterior=@Request.Url.ToString()"><img class="flag flag-br"> @Resources.Resource.lbl_Portuguese</a>
+				        </li>
+				        <li @(language == "en-US" ? "class=active" : "")>
+					        <a href="@Url.Action("ChangeLanguageLogin", "Home")/?language=en-US&urlAnterior=@Request.Url.ToString()"><img class="flag flag-us"> @Resources.Resource.lbl_English</a>
+				        </li>
+			        </ul>
+		        </li>
+	        </ul>
+        </div>*@
+
+	    @*<span id="extr-page-header-space"> <span class="hidden-mobile">Need an account?</span> <a href="register.html" class="btn btn-danger">Create account</a> </span>*@
+    </header>
+
+    <div id="main" role="main">
+        <div id="content" class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 login">
+                    <div class="media">
+                        @*<img src="../../images/img1.png" />*@
+                        <img class="media-object pull-right" src="@Url.Content("../../images/HRacing.png")"/>
+                        @*<img class="media-object pull-right" src="@Url.Content("~/images/horseracing1.png")"/>*@
+
+                        <div class="media-body">
+                            <h3 class="text-warning">Gestão de Cavalos</h3>
+                            <p>
+                              Confiabilidade, credibilidade e agilidade, no controle do seu trabalho tudo isso com segurança.
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-warning" target="_blank">@Resources.Resource.lbl_Documentation</a>
+                                <a href="http://technotag.com.br/" class="btn btn-warning" target="_blank">Technotag</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 login">
+                    <div class="well no-padding">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            if ('@msg' != "") {
+                ShowMessage('@msg');
+            }
+        });
+    </script>
+</body>
+</html>

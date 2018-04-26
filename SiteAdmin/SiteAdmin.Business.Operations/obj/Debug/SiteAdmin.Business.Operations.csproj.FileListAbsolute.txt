@@ -1,0 +1,4 @@
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Operations\bin\Debug\SiteAdmin.Business.Operations.dll
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Operations\bin\Debug\SiteAdmin.Business.Operations.pdb
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Operations\obj\Debug\SiteAdmin.Business.Operations.dll
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Operations\obj\Debug\SiteAdmin.Business.Operations.pdb

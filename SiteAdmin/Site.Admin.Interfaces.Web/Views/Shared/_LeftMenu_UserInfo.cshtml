@@ -1,0 +1,34 @@
+﻿@*@using HorseManagement.Infrastructure.Core.Security
+@model UserSecurity*@
+
+<aside id="left-panel">
+	<div class="login-info">
+		<span>
+			<a href="#" id="show-shortcut" data-action="toggleShortcut">
+				@*@if (string.IsNullOrEmpty(Model.User.Photo))
+                {
+                    <img class="img-circle" src="@Url.Content("~/images/user-unknown.png")" /> 
+                }
+                else
+                {
+                    <img class="img-circle" src="@Model.User.Photo" /> 
+                }*@
+				<span>
+					Matheus
+				</span>
+				<i class="fa fa-angle-down"></i>
+            </a>
+		</span>
+	</div>
+
+	<nav>
+        @*@if (Model != null)
+        {
+            @Html.Raw(HttpUtility.HtmlDecode(Model.Menu))
+        }*@
+	</nav>
+
+	<span class="minifyme" data-action="minifyMenu"> 
+		<i class="fa fa-arrow-circle-left hit"></i> 
+	</span>
+</aside>

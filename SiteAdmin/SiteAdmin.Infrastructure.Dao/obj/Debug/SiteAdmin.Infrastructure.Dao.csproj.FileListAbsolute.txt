@@ -1,0 +1,5 @@
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Dao\bin\Debug\SiteAdmin.Infrastructure.Dao.dll
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Dao\bin\Debug\SiteAdmin.Infrastructure.Dao.pdb
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Dao\obj\Debug\SiteAdmin.Infrastructure.Dao.csprojResolveAssemblyReference.cache
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Dao\obj\Debug\SiteAdmin.Infrastructure.Dao.dll
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Dao\obj\Debug\SiteAdmin.Infrastructure.Dao.pdb

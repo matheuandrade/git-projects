@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Site.Admin.Interfaces.Web
+namespace SiteAdmin.Interfaces.Web
 {
     public class FilterConfig
     {

@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using Site.Admin.Interfaces.Web.Models;
+using SiteAdmin.Interfaces.Web.Models;
 
-namespace Site.Admin.Interfaces.Web
+namespace SiteAdmin.Interfaces.Web
 {
     public partial class Startup
     {

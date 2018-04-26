@@ -12,7 +12,7 @@ using System.Web.Routing;
 
 namespace SiteAdmin.Infrastructure.Core.Base
 {
-    class BaseMvc : Controller
+   public class BaseMvc : Controller
     {
         private SecurityService _security;
 

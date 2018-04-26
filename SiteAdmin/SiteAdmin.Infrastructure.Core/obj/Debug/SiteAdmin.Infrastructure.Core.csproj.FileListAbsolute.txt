@@ -1,4 +1,3 @@
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\obj\Debug\SiteAdmin.Infrastructure.Core.csprojResolveAssemblyReference.cache
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\SiteAdmin.Infrastructure.Core.dll
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\SiteAdmin.Infrastructure.Core.pdb
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\SiteAdmin.Business.Dto.dll
@@ -9,10 +8,6 @@ C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Inf
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\SiteAdmin.Business.Dto.pdb
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\System.Web.Mvc.xml
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\System.Web.WebPages.xml
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\System.Web.Razor.xml
-C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\obj\Debug\SiteAdmin.Infrastructure.Core.csprojResolveAssemblyReference.cache
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\obj\Debug\SiteAdmin.Infrastructure.Core.dll
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Infrastructure.Core\obj\Debug\SiteAdmin.Infrastructure.Core.pdb

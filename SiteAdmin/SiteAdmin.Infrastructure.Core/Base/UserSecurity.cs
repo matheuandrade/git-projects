@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SiteAdmin.Infrastructure.Core.Base
 {
-    class UserSecurity
+    public class UserSecurity
     {
         public User User { get; set; }
         public List<SystemResource> SystemResources { get; set; }

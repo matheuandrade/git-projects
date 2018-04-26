@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteAdmin.Infrastructure.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteAdmin.Infrastructure.Dao", "SiteAdmin.Infrastructure.Dao\SiteAdmin.Infrastructure.Dao.csproj", "{FF250101-9621-479C-BC4A-FE35C3FD71C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Site.Admin.Interfaces.Web", "Site.Admin.Interfaces.Web\Site.Admin.Interfaces.Web.csproj", "{DD4BFE2B-A9D2-40C7-B2BD-DB3E9E2198A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteAdmin.Interfaces.Web", "Site.Admin.Interfaces.Web\SiteAdmin.Interfaces.Web.csproj", "{DD4BFE2B-A9D2-40C7-B2BD-DB3E9E2198A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

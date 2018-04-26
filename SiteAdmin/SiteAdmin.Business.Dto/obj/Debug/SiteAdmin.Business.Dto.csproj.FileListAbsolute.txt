@@ -1,4 +1,5 @@
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Dto\bin\Debug\SiteAdmin.Business.Dto.dll
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Dto\bin\Debug\SiteAdmin.Business.Dto.pdb
+C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Dto\obj\Debug\SiteAdmin.Business.Dto.csprojResolveAssemblyReference.cache
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Dto\obj\Debug\SiteAdmin.Business.Dto.dll
 C:\Users\matheus.andrade\Desktop\ProjectGit\git-projects\SiteAdmin\SiteAdmin.Business.Dto\obj\Debug\SiteAdmin.Business.Dto.pdb

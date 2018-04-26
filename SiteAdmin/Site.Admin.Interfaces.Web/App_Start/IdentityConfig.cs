@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using Site.Admin.Interfaces.Web.Models;
+using SiteAdmin.Interfaces.Web.Models;
 
-namespace Site.Admin.Interfaces.Web
+namespace SiteAdmin.Interfaces.Web
 {
     public class EmailService : IIdentityMessageService
     {

@@ -1,0 +1,34 @@
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\knockout example.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\knockout example.pdb
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\Microsoft.Web.Infrastructure.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\Newtonsoft.Json.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Net.Http.Formatting.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Helpers.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Http.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Http.WebHost.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Mvc.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Razor.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.WebPages.Deployment.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.WebPages.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.WebPages.Razor.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\Newtonsoft.Json.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Net.Http.Formatting.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Helpers.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Http.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Http.WebHost.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Mvc.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Razor.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.WebPages.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.WebPages.Deployment.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.WebPages.Razor.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\obj\Debug\knockout example.csprojResolveAssemblyReference.cache
+C:\Desenvolvimento\git-projects\knockout example\knockout example\obj\Debug\knockout example.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\obj\Debug\knockout example.pdb
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\EntityFramework.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\EntityFramework.xml
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\Antlr3.Runtime.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Optimization.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\WebGrease.dll
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\Antlr3.Runtime.pdb
+C:\Desenvolvimento\git-projects\knockout example\knockout example\bin\System.Web.Optimization.xml

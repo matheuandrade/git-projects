@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Teste knockout</h2>
+<script src="~/Scripts/knockout-3.4.2.js"></script>
+
+
+
+
+First Name: <input type="text" name="txtFirstName" data-bind="value: FirstName"/>
+Last Name: <input type="text" name="txtLastName" data-bind="value: LastName"/>
+
+<p>
+
+    <span data-bind="text: FullName"></span>
+
+</p>
+
+<script>
+
+    var NameViewModel = function (firtName, lastName) {
+
+        this.FirstName = ko.observable(firtName);
+        this.LastName = ko.observable(lastName);
+
+        this.FullName = ko.computed(function(){
+            return "Hello " + this.FirstName() + " " + this.LastName()
+        },this)
+
+    }
+
+    ko.applyBindings(new NameViewModel("Matheus", "Andrade"))
+
+
+
+
+</script>
+
+
+
+
+
+

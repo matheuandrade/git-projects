@@ -121,5 +121,16 @@ namespace ChurrasTrinca.Controllers
             return RedirectToAction("Details","Churras", new { id = idChurras});
         }
 
+        public ActionResult wcfPage()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
     }
 }
